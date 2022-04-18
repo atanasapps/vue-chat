@@ -1,0 +1,10 @@
+{
+    "apps": [
+        {
+            "name": "chat",
+            "instances": 0,
+            "script": "./api/server.js",
+            "kill_timeout": 3000
+        }
+    ]
+}

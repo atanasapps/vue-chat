@@ -1,0 +1,41 @@
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  background: linear-gradient(127deg, rgb(31, 207, 195) 0.00%, rgb(31, 145, 207) 100.00%);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 100vh;
+}
+
+.row::after {
+  clear: both;
+  content: "";
+}
+
+.col {
+  padding: 4px;
+  flex: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col {
+    flex: 90%;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .col {
+    flex: 60%;
+    max-width: 60%;
+  }
+}
